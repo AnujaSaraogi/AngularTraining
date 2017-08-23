@@ -1,0 +1,40 @@
+<h1 [innerText]="title"></h1>
+<hr>
+<h5 [innerText]="subTitle"></h5>
+<br>
+<p [innerText]="childMessage"></p>
+<br>
+<div class="container row">
+    <div class="col-md-3">
+        <label class="form-label">Search Events</label>
+    </div>
+    <div class="col-md-3">
+        <input type="search" class="form-control" [(ngModel)]="filterChar">
+    </div>
+</div>
+<hr>
+<table class="table table-hover table-stripped" *ngIf="events.length >0">
+    <thead>
+        <tr>
+            <th>Event Code</th>
+            <th>Event Name</th>
+            <th>Start Date</th>
+            <th>Fees</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let event of events | eventPipe: filterChar">
+            <td><span [innerText]="event.eventCode | lowercase"></span></td>
+            <td><span [innerText]="event.eventName | uppercase" ></span></td>
+            <td><span [innerText]="event.startDate | date"></span></td>
+            <td><span [innerText]="event.fees | currency:'INR':true"></span></td>
+            <td><button type="button" class="btn btn-primary" routerLink="/events/{{event.eventId}}">Show Details</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- <div class="container" *ngIf="selectedEvent">
+    <event-details [eventId]="selectedEvent.eventId" (publish-message)="subscribeChildMessage($event)"></event-details>
+</div> -->
+
