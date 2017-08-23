@@ -1,0 +1,1 @@
+{"version":3,"file":"jsonplaceholder.routing.js","sourceRoot":"","sources":["jsonplaceholder.routing.ts"],"names":[],"mappings":";;AACA,0CAAuD;AAEvD,gEAA8D;AAE9D,IAAM,gBAAgB,GAAW;IAC7B;QACI,IAAI,EAAE,EAAE;QACR,SAAS,EAAE,gCAAc;KAC5B;CACJ,CAAC;AAEW,QAAA,SAAS,GAAyB,qBAAY,CAAC,QAAQ,CAAC,gBAAgB,CAAC,CAAC"}

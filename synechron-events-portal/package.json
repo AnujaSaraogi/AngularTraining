@@ -1,0 +1,30 @@
+{
+  "name": "ng4-manual-bootstraping",
+  "version": "1.0.0",
+  "description": "First Angular 4 Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^4.3.5",
+    "@angular/compiler": "^4.3.5",
+    "@angular/core": "^4.3.5",
+    "@angular/forms": "^4.3.5",
+    "@angular/http": "^4.3.5",
+    "@angular/platform-browser": "^4.3.5",
+    "@angular/platform-browser-dynamic": "^4.3.5",
+    "@angular/router": "^4.3.5",
+    "core-js": "^2.5.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "systemjs": "^0.20.18",
+    "zone.js": "^0.8.16"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.24",
+    "typescript": "^2.3.4"
+  }
+}
