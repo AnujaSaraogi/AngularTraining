@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "typeRoots": [
+            "node/modules/@types"
+        ],
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "noImplicitAny": true
+    },
+    "files": [
+        "app/app.module.ts",
+        "app/main.ts"
+    ],
+    "angularCompilerOptions": {
+        "genDir": "aot",
+        "skipMetadataEmit": true
+    }
+}
